@@ -4,8 +4,8 @@
 
 <template>
     <header class="header">
-        <NuxtLink class="header__link" to="">Главная</NuxtLink>
-        <NuxtLink class="header__link" to="">Обо мне</NuxtLink>
+        <NuxtLink class="header__link" to="/">Главная</NuxtLink>
+        <NuxtLink class="header__link" to="/about">Обо мне</NuxtLink>
         <NuxtLink class="header__link" to="">Портфолио</NuxtLink>
         <NuxtLink class="header__link" to="">Контакты</NuxtLink>
     </header>
@@ -25,6 +25,7 @@
             font-weight: 500;
             color: #fff;
             opacity: 60%;
+            text-decoration: none;
         }
     }
 </style>

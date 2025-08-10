@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+import { VueTypedJs } from 'vue-typed-js'
+</script>
 
 <template>
   <main class="main">
@@ -57,6 +59,13 @@ body {
       border: 2px solid #FF9D00;
       border-radius: 20px;
       cursor: pointer;
+      transition: all 0.25s ease;
+
+      &:hover {
+        background-color: #FF9D00;
+        color: #1a1a1a;
+        
+      }
     }
   }
   

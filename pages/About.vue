@@ -3,9 +3,9 @@ const skills = [
   "Vue.js",
   "Nuxt",
   "Node.js",
-  "Express",
+  "Tailwind",
   "TypeScript",
-  "TailwindCSS",
+  "Express",
   "MongoDB",
 ];
 </script>

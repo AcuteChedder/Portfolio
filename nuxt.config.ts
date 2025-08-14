@@ -1,10 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  plugins: ['~/plugins/gsap.client.ts'],
   modules: ["@nuxtjs/google-fonts"],
-  
-  plugins: [
-  {src: '~/plugins/vueTyper.client.js', mode: 'client',}
-  ],
 
   googleFonts: {
     families: {

@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+const { $gsap, $SplitText } = useNuxtApp();
 const skills = [
   "Vue.js",
   "Nuxt",
@@ -8,6 +9,60 @@ const skills = [
   "Express",
   "MongoDB",
 ];
+
+const animation = () => {
+  $gsap.fromTo(
+    ".profile__img",
+    { opacity: 0, y: 20 },
+    { opacity: 1, y: 0, duration: 0.5, delay: 0.1, ease: "power2.out" }
+  );
+
+  $gsap.fromTo(
+    ".profile__name",
+    { opacity: 0, y: 20 },
+    { opacity: 1, y: 0, duration: 0.5, delay: 0.3, ease: "power2.out" }
+  );
+
+  $gsap.fromTo(
+    ".profile__doer",
+    { opacity: 0, y: 0 },
+    { opacity: 1, y: 0, duration: 1, delay: 0.5, ease: "power2.out" }
+  );
+
+  let split = new $SplitText(".profile__desc", {
+    type: "lines",
+  });
+  $gsap.set(split.lines, { opacity: 0, yPercent: 100 });
+  $gsap.to(split.lines, {
+    opacity: 1,
+    yPercent: 0,
+    duration: 2,
+    stagger: 0.4,
+    delay: 0.8,
+    ease: "expo.out",
+  });
+
+  $gsap.from(".skills__title", {
+    opacity: 0,
+    y: 30,
+    duration: 0.6,
+    delay: 2,
+    ease: "power3.out",
+  });
+
+  $gsap.from(".skills__cards-card", {
+    opacity: 0,
+    y: 30,
+    duration: 0.5,
+    stagger: 0.15,
+    delay: 2.5,
+    ease: "power3.out",
+  });
+}
+
+onMounted(() => {
+  animation()
+});
 </script>
 
 <template>
@@ -65,7 +120,7 @@ const skills = [
 
   &__doer {
     font-size: 16px;
-    color: #FF9D00;
+    color: #ff9d00;
     font-weight: 600;
   }
 
@@ -85,7 +140,7 @@ const skills = [
   &__title {
     font-size: 24px;
     color: #fff;
-    margin-top: 60px;
+    margin-top: 30px;
   }
 
   &__cards {
@@ -95,12 +150,11 @@ const skills = [
 
     &-card {
       padding: 12px 24px;
-      background-color: #FF9D00;
+      background-color: #ff9d00;
       font-size: 15px;
       font-weight: 500;
       border-radius: 20px;
       margin-top: 20px;
-      
     }
   }
 }

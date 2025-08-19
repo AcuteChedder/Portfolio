@@ -44,7 +44,7 @@ onMounted(() => {
         Привет! Я <span class="myname">Борис</span><br />Fullstack-разработчик.
       </h1>
       <div class="main__buttons">
-        <NuxtLink class="main__buttons-btn" to="/porfolio">Портфолио</NuxtLink>
+        <NuxtLink class="main__buttons-btn" to="/portfolio">Портфолио</NuxtLink>
         <NuxtLink class="main__buttons-btn" to="">Связаться</NuxtLink>
       </div>
     </div>

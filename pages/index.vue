@@ -77,6 +77,8 @@ body {
       cursor: pointer;
       border: 2px solid transparent;
       transition: all 0.25s ease;
+      text-decoration: none;
+      color: #1a1a1a;
 
       &:hover {
         background: none;
@@ -94,6 +96,8 @@ body {
       border-radius: 20px;
       cursor: pointer;
       transition: all 0.25s ease;
+      text-decoration: none;
+      color: #fff;
 
       &:hover {
         box-shadow: inset 5em 0 0 0 #ff9d00,

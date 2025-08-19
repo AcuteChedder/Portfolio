@@ -19,7 +19,7 @@ import { projects } from "~/data/projects";
             <p class="cards__card-desc">{{ project.description }}</p>
           </div>
           <div class="cards__card-stacks">
-            <p class="cards-card-stack" v-for="tech in project.stack">
+            <p class="cards__card-stack" v-for="tech in project.stack">
               {{ tech }}
             </p>
           </div>
@@ -46,12 +46,45 @@ import { projects } from "~/data/projects";
 
   &__card {
     position: relative;
-    width: 340px;
-    height: 200px;
+    width: 380px;
+    height: 220px;
     background-size: cover;
     background-position: center;
 
+    &-stacks {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 5px;
+      max-width: 140px;
+    }
+
+    &-stack {
+      font-size: 10px;
+      font-weight: 600;
+      padding: 2px 6px;
+      background-color: #FF9D00;
+      color: #1A1A1A;
+      border-radius: 15px;
+    }
+
+    &-text {
+      color: #fff;
+    }
+
+    &-title {
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    &-desc {
+      font-size: 10px;
+      max-width: 150px;
+    }
+
     &-content {
+      display: flex;
+      justify-content: space-between;
       position: absolute;
       left: 0;
       right: 0;
@@ -65,8 +98,7 @@ import { projects } from "~/data/projects";
   .cards__card-text,
   .cards__card-title,
   .cards__card-desc,
-  .cards__card-stacks,
-  .cards-card-stack {
+  .cards__card-stacks {
     background: none;
   }
 }

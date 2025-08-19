@@ -31,14 +31,14 @@ export const projects: Project[] = [
     {
         id: 4,
         title: 'Travila',
-        description: 'Многостраничник, с сортивкой отелей и обновлением списков через БД',
+        description: 'Многостраничник, с сортивкой отелей и обновлением рекомендаций',
         image: '/cards/bg-4.png',
         stack: ['Vue.js', 'Node.js', 'MongoDB']
     },
     {
         id: 5,
         title: 'Auth System',
-        description: 'Система аутентификации с сохранением пользователей в БД',
+        description: 'Система аутентификации с сохранением юзеров в БД',
         image: '/cards/bg-5.png',
         stack: ['Vue.js', 'Node.js', 'MongoDB']
     },

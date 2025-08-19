@@ -42,7 +42,11 @@ import { projects } from "~/data/projects";
 
 .cards {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
+  margin-top: 100px;
+  gap: 30px;
 
   &__card {
     position: relative;
@@ -54,6 +58,7 @@ import { projects } from "~/data/projects";
     &-stacks {
       display: flex;
       flex-wrap: wrap;
+      justify-content: flex-end;
       align-items: center;
       gap: 5px;
       max-width: 140px;
@@ -79,7 +84,7 @@ import { projects } from "~/data/projects";
 
     &-desc {
       font-size: 10px;
-      max-width: 150px;
+      max-width: 210px;
     }
 
     &-content {

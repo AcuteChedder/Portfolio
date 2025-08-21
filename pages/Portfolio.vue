@@ -54,6 +54,7 @@ import { projects } from "~/data/projects";
     height: 220px;
     background-size: cover;
     background-position: center;
+    object-fit: cover;
 
     &-stacks {
       display: flex;
@@ -78,12 +79,13 @@ import { projects } from "~/data/projects";
     }
 
     &-title {
-      font-size: 16px;
+      font-size: 18px;
       font-weight: 600;
     }
 
     &-desc {
-      font-size: 10px;
+      margin-top: 2px;
+      font-size: 11px;
       max-width: 210px;
     }
 

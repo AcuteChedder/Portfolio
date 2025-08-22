@@ -7,7 +7,7 @@
         <NuxtLink class="header__link" to="/">Главная</NuxtLink>
         <NuxtLink class="header__link" to="/about">Обо мне</NuxtLink>
         <NuxtLink class="header__link" to="/portfolio">Портфолио</NuxtLink>
-        <NuxtLink class="header__link" to="">Контакты</NuxtLink>
+        <NuxtLink class="header__link" to="/contacts">Контакты</NuxtLink>
     </header>
 </template>
 

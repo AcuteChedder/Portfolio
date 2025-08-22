@@ -45,7 +45,7 @@ onMounted(() => {
       </h1>
       <div class="main__buttons">
         <NuxtLink class="main__buttons-btn" to="/portfolio">Портфолио</NuxtLink>
-        <NuxtLink class="main__buttons-btn" to="">Связаться</NuxtLink>
+        <a href="https://t.me/AcuteChedder" class="main__buttons-btn" to="">Связаться</a>
       </div>
     </div>
   </main>

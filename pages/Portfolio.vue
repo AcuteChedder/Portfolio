@@ -54,7 +54,6 @@ import { projects } from "~/data/projects";
     height: 220px;
     background-size: cover;
     background-position: center;
-    object-fit: cover;
 
     &-stacks {
       display: flex;

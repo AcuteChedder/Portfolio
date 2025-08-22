@@ -45,7 +45,7 @@ export const projects: Project[] = [
     {
         id: 6,
         title: 'BroykzGPT',
-        description: 'Чат-бот в Telegram mini-apps, встроенная нейросеть через DeepSeek API',
+        description: 'Чат-бот в TG mini-apps, встроенная нейросеть через DeepSeek API',
         image: '/cards/bg-6.png',
         stack: ['Vue.js', 'Node.js']
     },

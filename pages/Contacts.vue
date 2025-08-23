@@ -71,6 +71,8 @@ onMounted(() => {
 
     &-img {
       background: none;
+      width: 40px;
+      height: 40px;
     }
 
     &-title {

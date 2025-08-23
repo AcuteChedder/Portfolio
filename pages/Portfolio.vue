@@ -1,5 +1,22 @@
 <script lang="ts" setup>
 import { projects } from "~/data/projects";
+const { $gsap } = useNuxtApp();
+
+onMounted(() => {
+  const tl = $gsap.timeline();
+
+  tl.fromTo(
+    ".main__title",
+    { opacity: 0, y: -20 },
+    { opacity: 1, y: 0, duration: 0.4, ease: "power2.out" }
+  );
+
+  tl.fromTo(
+    ".cards__card",
+    { opacity: 0, y: 30 },
+    { opacity: 1, y: 0, duration: 0.6, delay: 0, ease: "power2.out", stagger: 0.2 },
+  );
+});
 </script>
 
 <template>
@@ -31,7 +48,7 @@ import { projects } from "~/data/projects";
 
 <style lang="scss" scoped>
 .main {
-  margin-top: 50px;
+  margin-top: 100px;
   font-family: "Rubik", sans-serif;
 
   &__title {
@@ -45,7 +62,7 @@ import { projects } from "~/data/projects";
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 100px;
+  margin-top: 50px;
   gap: 30px;
 
   &__card {

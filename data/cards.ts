@@ -18,7 +18,7 @@ export const cards: Card[] = [
     },
 
     {
-        image: '/icons/kwork.svg',
+        image: '/icons/Kwork.svg',
         title: 'KWORK',
         link: 'https://kwork.ru/user/borisfrontend'
     },

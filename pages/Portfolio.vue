@@ -51,6 +51,10 @@ onMounted(() => {
   margin-top: 100px;
   font-family: "Rubik", sans-serif;
 
+  @media (max-width: 500px) {
+    margin-top: 50px;
+  }
+
   &__title {
     text-align: center;
     color: #fff;

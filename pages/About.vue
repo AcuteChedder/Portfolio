@@ -95,6 +95,10 @@ onMounted(() => {
   font-family: "Rubik", sans-serif;
   margin-top: 80px;
 
+  @media (max-width: 500px) {
+    margin-top: 50px;
+  }
+
   &__content {
     display: flex;
     flex-direction: column;

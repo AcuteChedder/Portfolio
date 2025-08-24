@@ -38,6 +38,10 @@ onMounted(() => {
   margin-top: calc(50svh - 120px - 30px);
   font-family: "Rubik", sans-serif;
 
+  @media (max-width: 500px) {
+    margin-top: calc(25svh - 90px - 30px);
+  }
+
   &__title {
     color: #fff;
   }
@@ -45,6 +49,8 @@ onMounted(() => {
 
 .cards {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 50px;
   margin-top: 40px;
 

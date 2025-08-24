@@ -26,6 +26,11 @@
             color: #fff;
             opacity: 60%;
             text-decoration: none;
+            white-space: nowrap;
+
+            @media (max-width: 500px) {
+                font-size: 3.5vw;
+            }
         }
     }
 </style>

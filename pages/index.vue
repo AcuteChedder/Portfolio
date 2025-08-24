@@ -79,11 +79,17 @@ body {
       transition: all 0.25s ease;
       text-decoration: none;
       color: #1a1a1a;
+      display: flex;
+      align-items: center;
 
       &:hover {
         background: none;
         border: 2px solid #ff9d00;
         color: #fff;
+      }
+
+      @media (max-width: 500px) {
+        font-size: 4vw;
       }
     }
 
@@ -98,12 +104,18 @@ body {
       transition: all 0.25s ease;
       text-decoration: none;
       color: #fff;
+      display: flex;
+      align-items: center;
 
       &:hover {
         box-shadow: inset 5em 0 0 0 #ff9d00,
         inset -5em 0 0 0 #ff9d00;
         border-color: #ff9d00;
         color: #1a1a1a;
+      }
+
+      @media (max-width: 500px) {
+        font-size: 4vw;
       }
     }
   }
@@ -120,6 +132,10 @@ body {
     color: #fff;
     font-size: 48px;
     text-align: center;
+
+    @media (max-width: 500px) {
+      font-size: 8vw;
+    }
 
     span {
       color: #ff9d00;

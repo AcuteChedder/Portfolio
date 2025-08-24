@@ -37,7 +37,7 @@ const animation = () => {
     opacity: 1,
     yPercent: 0,
     duration: 2,
-    stagger: 0.4,
+    stagger: 0.2,
     delay: 0.8,
     ease: "expo.out",
   });
@@ -98,6 +98,8 @@ onMounted(() => {
   &__content {
     display: flex;
     flex-direction: column;
+
+    
   }
 }
 
@@ -110,18 +112,31 @@ onMounted(() => {
   &__img {
     width: 300px;
     height: 300px;
+
+    @media (max-width: 500px) {
+      width: 50vw;
+      height: 50vw;
+    }
   }
 
   &__name {
     font-size: 40px;
     color: #fff;
     margin-top: 15px;
+
+    @media (max-width: 500px) {
+      font-size: 8vw;
+    }
   }
 
   &__doer {
     font-size: 16px;
     color: #ff9d00;
     font-weight: 600;
+
+    @media (max-width: 500px) {
+      font-size: 3vw;
+    }
   }
 
   &__desc {
@@ -129,6 +144,10 @@ onMounted(() => {
     color: #fff;
     font-weight: 500;
     margin-top: 20px;
+
+    @media (max-width: 500px) {
+      font-size: 5vw;
+    }
   }
 }
 
@@ -147,6 +166,8 @@ onMounted(() => {
     display: flex;
     gap: 32px;
     flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 5px;
 
     &-card {
       padding: 12px 24px;

@@ -132,6 +132,7 @@ body {
     color: #fff;
     font-size: 48px;
     text-align: center;
+    white-space: nowrap;
 
     @media (max-width: 500px) {
       font-size: 8vw;

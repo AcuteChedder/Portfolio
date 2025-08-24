@@ -17,6 +17,10 @@
         justify-content: center;
         align-items: center;
         gap: 40px;
+
+        @media (max-width: 500px) {
+            gap: 30px;
+        }
         
 
         &__link {
